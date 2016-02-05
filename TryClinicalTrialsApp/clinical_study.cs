@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Diagnostics;
 using System.Xml.Serialization;
 
 // 
@@ -23,76 +24,142 @@ using System.Xml.Serialization;
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
 [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
 public partial class clinical_study {
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private required_header_struct required_headerField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private id_info_struct id_infoField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string brief_titleField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string acronymField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string official_titleField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private sponsors_struct sponsorsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string sourceField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private oversight_info_struct oversight_infoField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private textblock_struct brief_summaryField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private textblock_struct detailed_descriptionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string overall_statusField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string why_stoppedField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string start_dateField;
-    
-    private string phaseField;
-    
-    private string study_typeField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private year_month_struct completion_dateField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private year_month_struct primary_completion_dateField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private phase_enum phaseField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private study_type_enum study_typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string study_designField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string target_durationField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private protocol_outcome_struct[] primary_outcomeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private protocol_outcome_struct[] secondary_outcomeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private protocol_outcome_struct[] other_outcomeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string number_of_armsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string number_of_groupsField;
-    
-    private string biospec_retentionField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private enrollment_struct enrollmentField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] conditionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private arm_group_struct[] arm_groupField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private intervention_struct[] interventionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private biospec_retention_enum biospec_retentionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool biospec_retentionFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private textblock_struct biospec_descrField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private eligibility_struct eligibilityField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private investigator_struct[] overall_officialField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private contact_struct overall_contactField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private contact_struct overall_contact_backupField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private location_struct[] locationField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] location_countriesField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] removed_countriesField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private link_struct[] linkField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private reference_struct[] referenceField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private reference_struct[] results_referenceField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string verification_dateField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string lastchanged_dateField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string firstreceived_dateField;
-    
-    private string is_fda_regulatedField;
-    
-    private string has_expanded_accessField;
-    
-    private clinical_studyRequired_header[] required_headerField;
-    
-    private clinical_studyId_info[] id_infoField;
-    
-    private clinical_studySponsorsLead_sponsor[][] sponsorsField;
-    
-    private clinical_studyOversight_info[] oversight_infoField;
-    
-    private clinical_studyBrief_summary[] brief_summaryField;
-    
-    private clinical_studyCompletion_date[] completion_dateField;
-    
-    private clinical_studyPrimary_completion_date[] primary_completion_dateField;
-    
-    private clinical_studyEnrollment[] enrollmentField;
-    
-    private clinical_studyCondition[] conditionField;
-    
-    private clinical_studyArm_group[] arm_groupField;
-    
-    private clinical_studyBiospec_descr[] biospec_descrField;
-    
-    private clinical_studyEligibility[] eligibilityField;
-    
-    private clinical_studyOverall_official[] overall_officialField;
-    
-    private clinical_studyLocation[] locationField;
-    
-    private clinical_studyLocation_countriesCountry[][] location_countriesField;
-    
-    private clinical_studyLink[] linkField;
-    
-    private clinical_studyResponsible_party[] responsible_partyField;
-    
-    private clinical_studyCondition_browseMesh_term[][] condition_browseField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string firstreceived_results_dateField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private responsible_party_struct responsible_partyField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] keywordField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private yes_no_enum is_fda_regulatedField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool is_fda_regulatedFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private yes_no_enum is_section_801Field;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool is_section_801FieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private yes_no_enum has_expanded_accessField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool has_expanded_accessFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] condition_browseField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] intervention_browseField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private clinical_results_struct clinical_resultsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string rankField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public required_header_struct required_header {
+        get {
+            return this.required_headerField;
+        }
+        set {
+            this.required_headerField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public id_info_struct id_info {
+        get {
+            return this.id_infoField;
+        }
+        set {
+            this.id_infoField = value;
+        }
+    }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -129,12 +196,56 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public sponsors_struct sponsors {
+        get {
+            return this.sponsorsField;
+        }
+        set {
+            this.sponsorsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string source {
         get {
             return this.sourceField;
         }
         set {
             this.sourceField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public oversight_info_struct oversight_info {
+        get {
+            return this.oversight_infoField;
+        }
+        set {
+            this.oversight_infoField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public textblock_struct brief_summary {
+        get {
+            return this.brief_summaryField;
+        }
+        set {
+            this.brief_summaryField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public textblock_struct detailed_description {
+        get {
+            return this.detailed_descriptionField;
+        }
+        set {
+            this.detailed_descriptionField = value;
         }
     }
     
@@ -151,6 +262,17 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string why_stopped {
+        get {
+            return this.why_stoppedField;
+        }
+        set {
+            this.why_stoppedField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
     public string start_date {
         get {
             return this.start_dateField;
@@ -162,7 +284,29 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string phase {
+    public year_month_struct completion_date {
+        get {
+            return this.completion_dateField;
+        }
+        set {
+            this.completion_dateField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public year_month_struct primary_completion_date {
+        get {
+            return this.primary_completion_dateField;
+        }
+        set {
+            this.primary_completion_dateField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public phase_enum phase {
         get {
             return this.phaseField;
         }
@@ -173,7 +317,7 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string study_type {
+    public study_type_enum study_type {
         get {
             return this.study_typeField;
         }
@@ -195,6 +339,61 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string target_duration {
+        get {
+            return this.target_durationField;
+        }
+        set {
+            this.target_durationField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("primary_outcome", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public protocol_outcome_struct[] primary_outcome {
+        get {
+            return this.primary_outcomeField;
+        }
+        set {
+            this.primary_outcomeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("secondary_outcome", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public protocol_outcome_struct[] secondary_outcome {
+        get {
+            return this.secondary_outcomeField;
+        }
+        set {
+            this.secondary_outcomeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("other_outcome", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public protocol_outcome_struct[] other_outcome {
+        get {
+            return this.other_outcomeField;
+        }
+        set {
+            this.other_outcomeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="integer")]
+    public string number_of_arms {
+        get {
+            return this.number_of_armsField;
+        }
+        set {
+            this.number_of_armsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="integer")]
     public string number_of_groups {
         get {
             return this.number_of_groupsField;
@@ -206,12 +405,190 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string biospec_retention {
+    public enrollment_struct enrollment {
+        get {
+            return this.enrollmentField;
+        }
+        set {
+            this.enrollmentField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("condition", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] condition {
+        get {
+            return this.conditionField;
+        }
+        set {
+            this.conditionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("arm_group", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public arm_group_struct[] arm_group {
+        get {
+            return this.arm_groupField;
+        }
+        set {
+            this.arm_groupField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("intervention", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public intervention_struct[] intervention {
+        get {
+            return this.interventionField;
+        }
+        set {
+            this.interventionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public biospec_retention_enum biospec_retention {
         get {
             return this.biospec_retentionField;
         }
         set {
             this.biospec_retentionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool biospec_retentionSpecified {
+        get {
+            return this.biospec_retentionFieldSpecified;
+        }
+        set {
+            this.biospec_retentionFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public textblock_struct biospec_descr {
+        get {
+            return this.biospec_descrField;
+        }
+        set {
+            this.biospec_descrField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public eligibility_struct eligibility {
+        get {
+            return this.eligibilityField;
+        }
+        set {
+            this.eligibilityField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("overall_official", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public investigator_struct[] overall_official {
+        get {
+            return this.overall_officialField;
+        }
+        set {
+            this.overall_officialField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public contact_struct overall_contact {
+        get {
+            return this.overall_contactField;
+        }
+        set {
+            this.overall_contactField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public contact_struct overall_contact_backup {
+        get {
+            return this.overall_contact_backupField;
+        }
+        set {
+            this.overall_contact_backupField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("location", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public location_struct[] location {
+        get {
+            return this.locationField;
+        }
+        set {
+            this.locationField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("country", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public string[] location_countries {
+        get {
+            return this.location_countriesField;
+        }
+        set {
+            this.location_countriesField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("country", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public string[] removed_countries {
+        get {
+            return this.removed_countriesField;
+        }
+        set {
+            this.removed_countriesField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("link", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public link_struct[] link {
+        get {
+            return this.linkField;
+        }
+        set {
+            this.linkField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("reference", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public reference_struct[] reference {
+        get {
+            return this.referenceField;
+        }
+        set {
+            this.referenceField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("results_reference", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public reference_struct[] results_reference {
+        get {
+            return this.results_referenceField;
+        }
+        set {
+            this.results_referenceField = value;
         }
     }
     
@@ -250,207 +627,18 @@ public partial class clinical_study {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string is_fda_regulated {
+    public string firstreceived_results_date {
         get {
-            return this.is_fda_regulatedField;
+            return this.firstreceived_results_dateField;
         }
         set {
-            this.is_fda_regulatedField = value;
+            this.firstreceived_results_dateField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string has_expanded_access {
-        get {
-            return this.has_expanded_accessField;
-        }
-        set {
-            this.has_expanded_accessField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("required_header", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyRequired_header[] required_header {
-        get {
-            return this.required_headerField;
-        }
-        set {
-            this.required_headerField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("id_info", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyId_info[] id_info {
-        get {
-            return this.id_infoField;
-        }
-        set {
-            this.id_infoField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("lead_sponsor", typeof(clinical_studySponsorsLead_sponsor), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-    public clinical_studySponsorsLead_sponsor[][] sponsors {
-        get {
-            return this.sponsorsField;
-        }
-        set {
-            this.sponsorsField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("oversight_info", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyOversight_info[] oversight_info {
-        get {
-            return this.oversight_infoField;
-        }
-        set {
-            this.oversight_infoField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("brief_summary", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyBrief_summary[] brief_summary {
-        get {
-            return this.brief_summaryField;
-        }
-        set {
-            this.brief_summaryField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("completion_date", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-    public clinical_studyCompletion_date[] completion_date {
-        get {
-            return this.completion_dateField;
-        }
-        set {
-            this.completion_dateField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("primary_completion_date", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-    public clinical_studyPrimary_completion_date[] primary_completion_date {
-        get {
-            return this.primary_completion_dateField;
-        }
-        set {
-            this.primary_completion_dateField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("enrollment", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-    public clinical_studyEnrollment[] enrollment {
-        get {
-            return this.enrollmentField;
-        }
-        set {
-            this.enrollmentField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("condition", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-    public clinical_studyCondition[] condition {
-        get {
-            return this.conditionField;
-        }
-        set {
-            this.conditionField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("arm_group", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyArm_group[] arm_group {
-        get {
-            return this.arm_groupField;
-        }
-        set {
-            this.arm_groupField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("biospec_descr", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyBiospec_descr[] biospec_descr {
-        get {
-            return this.biospec_descrField;
-        }
-        set {
-            this.biospec_descrField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("eligibility", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyEligibility[] eligibility {
-        get {
-            return this.eligibilityField;
-        }
-        set {
-            this.eligibilityField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("overall_official", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyOverall_official[] overall_official {
-        get {
-            return this.overall_officialField;
-        }
-        set {
-            this.overall_officialField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("location", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocation[] location {
-        get {
-            return this.locationField;
-        }
-        set {
-            this.locationField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("country", typeof(clinical_studyLocation_countriesCountry), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocation_countriesCountry[][] location_countries {
-        get {
-            return this.location_countriesField;
-        }
-        set {
-            this.location_countriesField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("link", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLink[] link {
-        get {
-            return this.linkField;
-        }
-        set {
-            this.linkField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("responsible_party", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyResponsible_party[] responsible_party {
+    public responsible_party_struct responsible_party {
         get {
             return this.responsible_partyField;
         }
@@ -460,14 +648,114 @@ public partial class clinical_study {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("keyword", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] keyword {
+        get {
+            return this.keywordField;
+        }
+        set {
+            this.keywordField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public yes_no_enum is_fda_regulated {
+        get {
+            return this.is_fda_regulatedField;
+        }
+        set {
+            this.is_fda_regulatedField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool is_fda_regulatedSpecified {
+        get {
+            return this.is_fda_regulatedFieldSpecified;
+        }
+        set {
+            this.is_fda_regulatedFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public yes_no_enum is_section_801 {
+        get {
+            return this.is_section_801Field;
+        }
+        set {
+            this.is_section_801Field = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool is_section_801Specified {
+        get {
+            return this.is_section_801FieldSpecified;
+        }
+        set {
+            this.is_section_801FieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public yes_no_enum has_expanded_access {
+        get {
+            return this.has_expanded_accessField;
+        }
+        set {
+            this.has_expanded_accessField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool has_expanded_accessSpecified {
+        get {
+            return this.has_expanded_accessFieldSpecified;
+        }
+        set {
+            this.has_expanded_accessFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
     [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("mesh_term", typeof(clinical_studyCondition_browseMesh_term), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyCondition_browseMesh_term[][] condition_browse {
+    [System.Xml.Serialization.XmlArrayItemAttribute("mesh_term", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public string[] condition_browse {
         get {
             return this.condition_browseField;
         }
         set {
             this.condition_browseField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("mesh_term", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public string[] intervention_browse {
+        get {
+            return this.intervention_browseField;
+        }
+        set {
+            this.intervention_browseField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public clinical_results_struct clinical_results {
+        get {
+            return this.clinical_resultsField;
+        }
+        set {
+            this.clinical_resultsField = value;
         }
     }
     
@@ -488,8 +776,7 @@ public partial class clinical_study {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyRequired_header {
+public partial class required_header_struct {
     
     private string download_dateField;
     
@@ -536,80 +823,57 @@ public partial class clinical_studyRequired_header {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyId_info {
+public partial class point_of_contact_struct {
     
-    private string org_study_idField;
+    private string name_or_titleField;
     
-    private string secondary_idField;
+    private string organizationField;
     
-    private string nct_idField;
+    private string phoneField;
+    
+    private string emailField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string org_study_id {
+    public string name_or_title {
         get {
-            return this.org_study_idField;
+            return this.name_or_titleField;
         }
         set {
-            this.org_study_idField = value;
+            this.name_or_titleField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string secondary_id {
+    public string organization {
         get {
-            return this.secondary_idField;
+            return this.organizationField;
         }
         set {
-            this.secondary_idField = value;
+            this.organizationField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string nct_id {
+    public string phone {
         get {
-            return this.nct_idField;
+            return this.phoneField;
         }
         set {
-            this.nct_idField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studySponsorsLead_sponsor {
-    
-    private string agencyField;
-    
-    private string agency_classField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string agency {
-        get {
-            return this.agencyField;
-        }
-        set {
-            this.agencyField = value;
+            this.phoneField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string agency_class {
+    public string email {
         get {
-            return this.agency_classField;
+            return this.emailField;
         }
         set {
-            this.agency_classField = value;
+            this.emailField = value;
         }
     }
 }
@@ -619,54 +883,43 @@ public partial class clinical_studySponsorsLead_sponsor {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyOversight_info {
-    
-    private string authorityField;
-    
-    private string has_dmcField;
-    
+public partial class certain_agreements_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private pi_employee_enum pi_employeeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool pi_employeeFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string restrictive_agreementField;
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string authority {
+    public pi_employee_enum pi_employee {
         get {
-            return this.authorityField;
+            return this.pi_employeeField;
         }
         set {
-            this.authorityField = value;
+            this.pi_employeeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool pi_employeeSpecified {
+        get {
+            return this.pi_employeeFieldSpecified;
+        }
+        set {
+            this.pi_employeeFieldSpecified = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string has_dmc {
+    public string restrictive_agreement {
         get {
-            return this.has_dmcField;
+            return this.restrictive_agreementField;
         }
         set {
-            this.has_dmcField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyBrief_summary {
-    
-    private string textblockField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string textblock {
-        get {
-            return this.textblockField;
-        }
-        set {
-            this.textblockField = value;
+            this.restrictive_agreementField = value;
         }
     }
 }
@@ -674,18 +927,810 @@ public partial class clinical_studyBrief_summary {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.SerializableAttribute()]
+public enum pi_employee_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("All Principal Investigators ARE employed by the organization sponsoring the study" +
+        ".")]
+    AllPrincipalInvestigatorsAREemployedbytheorganizationsponsoringthestudy,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Principal Investigators are NOT employed by the organization sponsoring the study" +
+        ".")]
+    PrincipalInvestigatorsareNOTemployedbytheorganizationsponsoringthestudy,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyCompletion_date {
-    
-    private string typeField;
-    
+public partial class event_counts_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string group_idField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string subjects_affectedField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string subjects_at_riskField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string eventsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string valueField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string type {
+    public string group_id {
+        get {
+            return this.group_idField;
+        }
+        set {
+            this.group_idField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
+    public string subjects_affected {
+        get {
+            return this.subjects_affectedField;
+        }
+        set {
+            this.subjects_affectedField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
+    public string subjects_at_risk {
+        get {
+            return this.subjects_at_riskField;
+        }
+        set {
+            this.subjects_at_riskField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
+    public string events {
+        get {
+            return this.eventsField;
+        }
+        set {
+            this.eventsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlTextAttribute()]
+    public string Value {
+        get {
+            return this.valueField;
+        }
+        set {
+            this.valueField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class vocab_term_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string vocabField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string valueField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string vocab {
+        get {
+            return this.vocabField;
+        }
+        set {
+            this.vocabField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlTextAttribute()]
+    public string Value {
+        get {
+            return this.valueField;
+        }
+        set {
+            this.valueField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class event_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private vocab_term_struct sub_titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private event_assessment_enum assessmentField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool assessmentFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descriptionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private event_counts_struct[] countsField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public vocab_term_struct sub_title {
+        get {
+            return this.sub_titleField;
+        }
+        set {
+            this.sub_titleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public event_assessment_enum assessment {
+        get {
+            return this.assessmentField;
+        }
+        set {
+            this.assessmentField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool assessmentSpecified {
+        get {
+            return this.assessmentFieldSpecified;
+        }
+        set {
+            this.assessmentFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string description {
+        get {
+            return this.descriptionField;
+        }
+        set {
+            this.descriptionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("counts", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public event_counts_struct[] counts {
+        get {
+            return this.countsField;
+        }
+        set {
+            this.countsField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum event_assessment_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Non-systematic Assessment")]
+    NonsystematicAssessment,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Systematic Assessment")]
+    SystematicAssessment,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class event_category_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private event_struct[] event_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string title {
+        get {
+            return this.titleField;
+        }
+        set {
+            this.titleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("event", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public event_struct[] event_list {
+        get {
+            return this.event_listField;
+        }
+        set {
+            this.event_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class events_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string frequency_thresholdField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string default_vocabField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private event_assessment_enum default_assessmentField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool default_assessmentFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private event_category_struct[] category_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string frequency_threshold {
+        get {
+            return this.frequency_thresholdField;
+        }
+        set {
+            this.frequency_thresholdField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string default_vocab {
+        get {
+            return this.default_vocabField;
+        }
+        set {
+            this.default_vocabField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public event_assessment_enum default_assessment {
+        get {
+            return this.default_assessmentField;
+        }
+        set {
+            this.default_assessmentField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool default_assessmentSpecified {
+        get {
+            return this.default_assessmentFieldSpecified;
+        }
+        set {
+            this.default_assessmentFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("category", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public event_category_struct[] category_list {
+        get {
+            return this.category_listField;
+        }
+        set {
+            this.category_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class reported_events_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string time_frameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private group_struct[] group_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private events_struct serious_eventsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private events_struct other_eventsField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string time_frame {
+        get {
+            return this.time_frameField;
+        }
+        set {
+            this.time_frameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string desc {
+        get {
+            return this.descField;
+        }
+        set {
+            this.descField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("group", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public group_struct[] group_list {
+        get {
+            return this.group_listField;
+        }
+        set {
+            this.group_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public events_struct serious_events {
+        get {
+            return this.serious_eventsField;
+        }
+        set {
+            this.serious_eventsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public events_struct other_events {
+        get {
+            return this.other_eventsField;
+        }
+        set {
+            this.other_eventsField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class group_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descriptionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string group_idField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string title {
+        get {
+            return this.titleField;
+        }
+        set {
+            this.titleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string description {
+        get {
+            return this.descriptionField;
+        }
+        set {
+            this.descriptionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string group_id {
+        get {
+            return this.group_idField;
+        }
+        set {
+            this.group_idField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class analysis_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] group_id_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string groups_descField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private yes_no_enum non_inferiorityField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool non_inferiorityFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string non_inferiority_descField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string p_valueField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string p_value_descField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string methodField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string method_descField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string param_typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string param_valueField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private analysis_dispersion_enum dispersion_typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool dispersion_typeFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string dispersion_valueField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private float ci_percentField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool ci_percentFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private n_sides_enum ci_n_sidesField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool ci_n_sidesFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string ci_lower_limitField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string ci_upper_limitField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string ci_upper_limit_na_commentField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string estimate_descField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("group_id", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public string[] group_id_list {
+        get {
+            return this.group_id_listField;
+        }
+        set {
+            this.group_id_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string groups_desc {
+        get {
+            return this.groups_descField;
+        }
+        set {
+            this.groups_descField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public yes_no_enum non_inferiority {
+        get {
+            return this.non_inferiorityField;
+        }
+        set {
+            this.non_inferiorityField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool non_inferioritySpecified {
+        get {
+            return this.non_inferiorityFieldSpecified;
+        }
+        set {
+            this.non_inferiorityFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string non_inferiority_desc {
+        get {
+            return this.non_inferiority_descField;
+        }
+        set {
+            this.non_inferiority_descField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string p_value {
+        get {
+            return this.p_valueField;
+        }
+        set {
+            this.p_valueField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string p_value_desc {
+        get {
+            return this.p_value_descField;
+        }
+        set {
+            this.p_value_descField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string method {
+        get {
+            return this.methodField;
+        }
+        set {
+            this.methodField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string method_desc {
+        get {
+            return this.method_descField;
+        }
+        set {
+            this.method_descField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string param_type {
+        get {
+            return this.param_typeField;
+        }
+        set {
+            this.param_typeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string param_value {
+        get {
+            return this.param_valueField;
+        }
+        set {
+            this.param_valueField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public analysis_dispersion_enum dispersion_type {
+        get {
+            return this.dispersion_typeField;
+        }
+        set {
+            this.dispersion_typeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool dispersion_typeSpecified {
+        get {
+            return this.dispersion_typeFieldSpecified;
+        }
+        set {
+            this.dispersion_typeFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string dispersion_value {
+        get {
+            return this.dispersion_valueField;
+        }
+        set {
+            this.dispersion_valueField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public float ci_percent {
+        get {
+            return this.ci_percentField;
+        }
+        set {
+            this.ci_percentField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool ci_percentSpecified {
+        get {
+            return this.ci_percentFieldSpecified;
+        }
+        set {
+            this.ci_percentFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public n_sides_enum ci_n_sides {
+        get {
+            return this.ci_n_sidesField;
+        }
+        set {
+            this.ci_n_sidesField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool ci_n_sidesSpecified {
+        get {
+            return this.ci_n_sidesFieldSpecified;
+        }
+        set {
+            this.ci_n_sidesFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string ci_lower_limit {
+        get {
+            return this.ci_lower_limitField;
+        }
+        set {
+            this.ci_lower_limitField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string ci_upper_limit {
+        get {
+            return this.ci_upper_limitField;
+        }
+        set {
+            this.ci_upper_limitField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string ci_upper_limit_na_comment {
+        get {
+            return this.ci_upper_limit_na_commentField;
+        }
+        set {
+            this.ci_upper_limit_na_commentField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string estimate_desc {
+        get {
+            return this.estimate_descField;
+        }
+        set {
+            this.estimate_descField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum yes_no_enum {
+    
+    /// <remarks/>
+    Yes,
+    
+    /// <remarks/>
+    No,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum analysis_dispersion_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Standard Deviation")]
+    StandardDeviation,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Standard Error of the Mean")]
+    StandardErroroftheMean,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum n_sides_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("1-Sided")]
+    Item1Sided,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("2-Sided")]
+    Item2Sided,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class results_outcome_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private outcome_type_enum typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descriptionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string time_frameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private yes_no_enum safety_issueField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool safety_issueFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string posting_dateField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string populationField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private group_struct[] group_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private measure_struct[] measure_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private analysis_struct[] analysis_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public outcome_type_enum type {
         get {
             return this.typeField;
         }
@@ -695,13 +1740,344 @@ public partial class clinical_studyCompletion_date {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string title {
         get {
-            return this.valueField;
+            return this.titleField;
         }
         set {
-            this.valueField = value;
+            this.titleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string description {
+        get {
+            return this.descriptionField;
+        }
+        set {
+            this.descriptionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string time_frame {
+        get {
+            return this.time_frameField;
+        }
+        set {
+            this.time_frameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public yes_no_enum safety_issue {
+        get {
+            return this.safety_issueField;
+        }
+        set {
+            this.safety_issueField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool safety_issueSpecified {
+        get {
+            return this.safety_issueFieldSpecified;
+        }
+        set {
+            this.safety_issueFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string posting_date {
+        get {
+            return this.posting_dateField;
+        }
+        set {
+            this.posting_dateField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string population {
+        get {
+            return this.populationField;
+        }
+        set {
+            this.populationField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("group", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public group_struct[] group_list {
+        get {
+            return this.group_listField;
+        }
+        set {
+            this.group_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("measure", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public measure_struct[] measure_list {
+        get {
+            return this.measure_listField;
+        }
+        set {
+            this.measure_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("analysis", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public analysis_struct[] analysis_list {
+        get {
+            return this.analysis_listField;
+        }
+        set {
+            this.analysis_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum outcome_type_enum {
+    
+    /// <remarks/>
+    Primary,
+    
+    /// <remarks/>
+    Secondary,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Other Pre-specified")]
+    OtherPrespecified,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Post-Hoc")]
+    PostHoc,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class measure_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descriptionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string unitsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private outcome_param_enum paramField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool paramFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private outcome_dispersion_enum dispersionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool dispersionFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private measure_category_struct[] category_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string title {
+        get {
+            return this.titleField;
+        }
+        set {
+            this.titleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string description {
+        get {
+            return this.descriptionField;
+        }
+        set {
+            this.descriptionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string units {
+        get {
+            return this.unitsField;
+        }
+        set {
+            this.unitsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public outcome_param_enum param {
+        get {
+            return this.paramField;
+        }
+        set {
+            this.paramField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool paramSpecified {
+        get {
+            return this.paramFieldSpecified;
+        }
+        set {
+            this.paramFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public outcome_dispersion_enum dispersion {
+        get {
+            return this.dispersionField;
+        }
+        set {
+            this.dispersionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool dispersionSpecified {
+        get {
+            return this.dispersionFieldSpecified;
+        }
+        set {
+            this.dispersionFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("category", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public measure_category_struct[] category_list {
+        get {
+            return this.category_listField;
+        }
+        set {
+            this.category_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum outcome_param_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Geometric Mean")]
+    GeometricMean,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Least Squares Mean")]
+    LeastSquaresMean,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Log Mean")]
+    LogMean,
+    
+    /// <remarks/>
+    Mean,
+    
+    /// <remarks/>
+    Median,
+    
+    /// <remarks/>
+    Number,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum outcome_dispersion_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("90% Confidence Interval")]
+    Item90ConfidenceInterval,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("95% Confidence Interval")]
+    Item95ConfidenceInterval,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Full Range")]
+    FullRange,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Geometric Coefficient of Variation")]
+    GeometricCoefficientofVariation,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Inter-Quartile Range")]
+    InterQuartileRange,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Standard Deviation")]
+    StandardDeviation,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Standard Error")]
+    StandardError,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class measure_category_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string sub_titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private measurement_struct[] measurement_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string sub_title {
+        get {
+            return this.sub_titleField;
+        }
+        set {
+            this.sub_titleField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("measurement", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public measurement_struct[] measurement_list {
+        get {
+            return this.measurement_listField;
+        }
+        set {
+            this.measurement_listField = value;
         }
     }
 }
@@ -711,21 +2087,168 @@ public partial class clinical_studyCompletion_date {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyPrimary_completion_date {
+public partial class measurement_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string group_idField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string valueField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string spreadField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string lower_limitField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string upper_limitField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string valueField1;
     
-    private string typeField;
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string group_id {
+        get {
+            return this.group_idField;
+        }
+        set {
+            this.group_idField = value;
+        }
+    }
     
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string value {
+        get {
+            return this.valueField;
+        }
+        set {
+            this.valueField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string spread {
+        get {
+            return this.spreadField;
+        }
+        set {
+            this.spreadField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string lower_limit {
+        get {
+            return this.lower_limitField;
+        }
+        set {
+            this.lower_limitField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string upper_limit {
+        get {
+            return this.upper_limitField;
+        }
+        set {
+            this.upper_limitField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlTextAttribute()]
+    public string Value {
+        get {
+            return this.valueField1;
+        }
+        set {
+            this.valueField1 = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class baseline_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string populationField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private group_struct[] group_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private measure_struct[] measure_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string population {
+        get {
+            return this.populationField;
+        }
+        set {
+            this.populationField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("group", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public group_struct[] group_list {
+        get {
+            return this.group_listField;
+        }
+        set {
+            this.group_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("measure", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public measure_struct[] measure_list {
+        get {
+            return this.measure_listField;
+        }
+        set {
+            this.measure_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class participants_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string group_idField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string countField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string valueField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string type {
+    public string group_id {
         get {
-            return this.typeField;
+            return this.group_idField;
         }
         set {
-            this.typeField = value;
+            this.group_idField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
+    public string count {
+        get {
+            return this.countField;
+        }
+        set {
+            this.countField = value;
         }
     }
     
@@ -746,54 +2269,32 @@ public partial class clinical_studyPrimary_completion_date {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyEnrollment {
-    
-    private string typeField;
-    
-    private string valueField;
+public partial class milestone_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private participants_struct[] participants_listField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string type {
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string title {
         get {
-            return this.typeField;
+            return this.titleField;
         }
         set {
-            this.typeField = value;
+            this.titleField = value;
         }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("participants", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public participants_struct[] participants_list {
         get {
-            return this.valueField;
+            return this.participants_listField;
         }
         set {
-            this.valueField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyCondition {
-    
-    private string valueField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
-        get {
-            return this.valueField;
-        }
-        set {
-            this.valueField = value;
+            this.participants_listField = value;
         }
     }
 }
@@ -803,21 +2304,348 @@ public partial class clinical_studyCondition {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyArm_group {
+public partial class period_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string titleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private milestone_struct[] milestone_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private milestone_struct[] drop_withdraw_reason_listField;
     
-    private string arm_group_labelField;
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string title {
+        get {
+            return this.titleField;
+        }
+        set {
+            this.titleField = value;
+        }
+    }
     
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("milestone", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public milestone_struct[] milestone_list {
+        get {
+            return this.milestone_listField;
+        }
+        set {
+            this.milestone_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("drop_withdraw_reason", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public milestone_struct[] drop_withdraw_reason_list {
+        get {
+            return this.drop_withdraw_reason_listField;
+        }
+        set {
+            this.drop_withdraw_reason_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class participant_flow_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string recruitment_detailsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string pre_assignment_detailsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private group_struct[] group_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private period_struct[] period_listField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string recruitment_details {
+        get {
+            return this.recruitment_detailsField;
+        }
+        set {
+            this.recruitment_detailsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string pre_assignment_details {
+        get {
+            return this.pre_assignment_detailsField;
+        }
+        set {
+            this.pre_assignment_detailsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("group", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public group_struct[] group_list {
+        get {
+            return this.group_listField;
+        }
+        set {
+            this.group_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("period", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public period_struct[] period_list {
+        get {
+            return this.period_listField;
+        }
+        set {
+            this.period_listField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class clinical_results_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private participant_flow_struct participant_flowField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private baseline_struct baselineField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private results_outcome_struct[] outcome_listField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private reported_events_struct reported_eventsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private certain_agreements_struct certain_agreementsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string limitations_and_caveatsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private point_of_contact_struct point_of_contactField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public participant_flow_struct participant_flow {
+        get {
+            return this.participant_flowField;
+        }
+        set {
+            this.participant_flowField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public baseline_struct baseline {
+        get {
+            return this.baselineField;
+        }
+        set {
+            this.baselineField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("outcome", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+    public results_outcome_struct[] outcome_list {
+        get {
+            return this.outcome_listField;
+        }
+        set {
+            this.outcome_listField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public reported_events_struct reported_events {
+        get {
+            return this.reported_eventsField;
+        }
+        set {
+            this.reported_eventsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public certain_agreements_struct certain_agreements {
+        get {
+            return this.certain_agreementsField;
+        }
+        set {
+            this.certain_agreementsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string limitations_and_caveats {
+        get {
+            return this.limitations_and_caveatsField;
+        }
+        set {
+            this.limitations_and_caveatsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public point_of_contact_struct point_of_contact {
+        get {
+            return this.point_of_contactField;
+        }
+        set {
+            this.point_of_contactField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class responsible_party_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private object[] itemsField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private ItemsChoiceType[] itemsElementNameField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("investigator_affiliation", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlElementAttribute("investigator_full_name", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlElementAttribute("investigator_title", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlElementAttribute("name_title", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlElementAttribute("organization", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlElementAttribute("responsible_party_type", typeof(responsible_party_type_enum), Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
+    public object[] Items {
+        get {
+            return this.itemsField;
+        }
+        set {
+            this.itemsField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public ItemsChoiceType[] ItemsElementName {
+        get {
+            return this.itemsElementNameField;
+        }
+        set {
+            this.itemsElementNameField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum responsible_party_type_enum {
+    
+    /// <remarks/>
+    Sponsor,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Principal Investigator")]
+    PrincipalInvestigator,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Sponsor-Investigator")]
+    SponsorInvestigator,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Xml.Serialization.XmlTypeAttribute(IncludeInSchema=false)]
+public enum ItemsChoiceType {
+    
+    /// <remarks/>
+    investigator_affiliation,
+    
+    /// <remarks/>
+    investigator_full_name,
+    
+    /// <remarks/>
+    investigator_title,
+    
+    /// <remarks/>
+    name_title,
+    
+    /// <remarks/>
+    organization,
+    
+    /// <remarks/>
+    responsible_party_type,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class reference_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string citationField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string pMIDField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string citation {
+        get {
+            return this.citationField;
+        }
+        set {
+            this.citationField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="positiveInteger")]
+    public string PMID {
+        get {
+            return this.pMIDField;
+        }
+        set {
+            this.pMIDField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class link_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string urlField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string descriptionField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string arm_group_label {
+    public string url {
         get {
-            return this.arm_group_labelField;
+            return this.urlField;
         }
         set {
-            this.arm_group_labelField = value;
+            this.urlField = value;
         }
     }
     
@@ -838,338 +2666,14 @@ public partial class clinical_studyArm_group {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyBiospec_descr {
-    
-    private string textblockField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string textblock {
-        get {
-            return this.textblockField;
-        }
-        set {
-            this.textblockField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyEligibility {
-    
-    private string sampling_methodField;
-    
-    private string genderField;
-    
-    private string minimum_ageField;
-    
-    private string maximum_ageField;
-    
-    private string healthy_volunteersField;
-    
-    private clinical_studyEligibilityStudy_pop[] study_popField;
-    
-    private clinical_studyEligibilityCriteria[] criteriaField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string sampling_method {
-        get {
-            return this.sampling_methodField;
-        }
-        set {
-            this.sampling_methodField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string gender {
-        get {
-            return this.genderField;
-        }
-        set {
-            this.genderField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string minimum_age {
-        get {
-            return this.minimum_ageField;
-        }
-        set {
-            this.minimum_ageField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string maximum_age {
-        get {
-            return this.maximum_ageField;
-        }
-        set {
-            this.maximum_ageField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string healthy_volunteers {
-        get {
-            return this.healthy_volunteersField;
-        }
-        set {
-            this.healthy_volunteersField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("study_pop", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyEligibilityStudy_pop[] study_pop {
-        get {
-            return this.study_popField;
-        }
-        set {
-            this.study_popField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("criteria", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyEligibilityCriteria[] criteria {
-        get {
-            return this.criteriaField;
-        }
-        set {
-            this.criteriaField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyEligibilityStudy_pop {
-    
-    private string textblockField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string textblock {
-        get {
-            return this.textblockField;
-        }
-        set {
-            this.textblockField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyEligibilityCriteria {
-    
-    private string textblockField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string textblock {
-        get {
-            return this.textblockField;
-        }
-        set {
-            this.textblockField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyOverall_official {
-    
-    private string last_nameField;
-    
-    private string roleField;
-    
-    private string affiliationField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string last_name {
-        get {
-            return this.last_nameField;
-        }
-        set {
-            this.last_nameField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string role {
-        get {
-            return this.roleField;
-        }
-        set {
-            this.roleField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string affiliation {
-        get {
-            return this.affiliationField;
-        }
-        set {
-            this.affiliationField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocation {
-    
-    private string statusField;
-    
-    private clinical_studyLocationFacility[] facilityField;
-    
-    private clinical_studyLocationContact[] contactField;
-    
-    private clinical_studyLocationContact_backup[] contact_backupField;
-    
-    private clinical_studyLocationInvestigator[] investigatorField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string status {
-        get {
-            return this.statusField;
-        }
-        set {
-            this.statusField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("facility", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocationFacility[] facility {
-        get {
-            return this.facilityField;
-        }
-        set {
-            this.facilityField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("contact", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocationContact[] contact {
-        get {
-            return this.contactField;
-        }
-        set {
-            this.contactField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("contact_backup", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocationContact_backup[] contact_backup {
-        get {
-            return this.contact_backupField;
-        }
-        set {
-            this.contact_backupField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("investigator", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocationInvestigator[] investigator {
-        get {
-            return this.investigatorField;
-        }
-        set {
-            this.investigatorField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocationFacility {
-    
-    private string nameField;
-    
-    private clinical_studyLocationFacilityAddress[] addressField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string name {
-        get {
-            return this.nameField;
-        }
-        set {
-            this.nameField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("address", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public clinical_studyLocationFacilityAddress[] address {
-        get {
-            return this.addressField;
-        }
-        set {
-            this.addressField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocationFacilityAddress {
-    
+public partial class address_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string cityField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string stateField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string zipField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string countryField;
     
     /// <remarks/>
@@ -1222,16 +2726,196 @@ public partial class clinical_studyLocationFacilityAddress {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocationContact {
+public partial class facility_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private address_struct addressField;
     
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string name {
+        get {
+            return this.nameField;
+        }
+        set {
+            this.nameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public address_struct address {
+        get {
+            return this.addressField;
+        }
+        set {
+            this.addressField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class location_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private facility_struct facilityField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private recruitment_status_enum statusField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool statusFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private contact_struct contactField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private contact_struct contact_backupField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private investigator_struct[] investigatorField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public facility_struct facility {
+        get {
+            return this.facilityField;
+        }
+        set {
+            this.facilityField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public recruitment_status_enum status {
+        get {
+            return this.statusField;
+        }
+        set {
+            this.statusField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool statusSpecified {
+        get {
+            return this.statusFieldSpecified;
+        }
+        set {
+            this.statusFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public contact_struct contact {
+        get {
+            return this.contactField;
+        }
+        set {
+            this.contactField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public contact_struct contact_backup {
+        get {
+            return this.contact_backupField;
+        }
+        set {
+            this.contact_backupField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("investigator", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public investigator_struct[] investigator {
+        get {
+            return this.investigatorField;
+        }
+        set {
+            this.investigatorField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum recruitment_status_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Active, not recruiting")]
+    Activenotrecruiting,
+    
+    /// <remarks/>
+    Completed,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Enrolling by invitation")]
+    Enrollingbyinvitation,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Not yet recruiting")]
+    Notyetrecruiting,
+    
+    /// <remarks/>
+    Recruiting,
+    
+    /// <remarks/>
+    Suspended,
+    
+    /// <remarks/>
+    Terminated,
+    
+    /// <remarks/>
+    Withdrawn,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class contact_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string first_nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string middle_nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string last_nameField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string degreesField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string phoneField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string phone_extField;
-    
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string emailField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string first_name {
+        get {
+            return this.first_nameField;
+        }
+        set {
+            this.first_nameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string middle_name {
+        get {
+            return this.middle_nameField;
+        }
+        set {
+            this.middle_nameField = value;
+        }
+    }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -1241,6 +2925,17 @@ public partial class clinical_studyLocationContact {
         }
         set {
             this.last_nameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string degrees {
+        get {
+            return this.degreesField;
+        }
+        set {
+            this.degreesField = value;
         }
     }
     
@@ -1283,16 +2978,43 @@ public partial class clinical_studyLocationContact {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocationContact_backup {
-    
+public partial class investigator_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string first_nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string middle_nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string last_nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string degreesField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private role_enum roleField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool roleFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string affiliationField;
     
-    private string phoneField;
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string first_name {
+        get {
+            return this.first_nameField;
+        }
+        set {
+            this.first_nameField = value;
+        }
+    }
     
-    private string phone_extField;
-    
-    private string emailField;
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string middle_name {
+        get {
+            return this.middle_nameField;
+        }
+        set {
+            this.middle_nameField = value;
+        }
+    }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -1307,64 +3029,18 @@ public partial class clinical_studyLocationContact_backup {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string phone {
+    public string degrees {
         get {
-            return this.phoneField;
+            return this.degreesField;
         }
         set {
-            this.phoneField = value;
+            this.degreesField = value;
         }
     }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string phone_ext {
-        get {
-            return this.phone_extField;
-        }
-        set {
-            this.phone_extField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string email {
-        get {
-            return this.emailField;
-        }
-        set {
-            this.emailField = value;
-        }
-    }
-}
-
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocationInvestigator {
-    
-    private string last_nameField;
-    
-    private string roleField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string last_name {
-        get {
-            return this.last_nameField;
-        }
-        set {
-            this.last_nameField = value;
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string role {
+    public role_enum role {
         get {
             return this.roleField;
         }
@@ -1372,6 +3048,50 @@ public partial class clinical_studyLocationInvestigator {
             this.roleField = value;
         }
     }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool roleSpecified {
+        get {
+            return this.roleFieldSpecified;
+        }
+        set {
+            this.roleFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string affiliation {
+        get {
+            return this.affiliationField;
+        }
+        set {
+            this.affiliationField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum role_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Principal Investigator")]
+    PrincipalInvestigator,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Sub-Investigator")]
+    SubInvestigator,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Study Chair")]
+    StudyChair,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Study Director")]
+    StudyDirector,
 }
 
 /// <remarks/>
@@ -1379,19 +3099,109 @@ public partial class clinical_studyLocationInvestigator {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLocation_countriesCountry {
-    
-    private string valueField;
+public partial class eligibility_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private textblock_struct study_popField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private sampling_method_enum sampling_methodField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool sampling_methodFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private textblock_struct criteriaField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string genderField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string minimum_ageField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string maximum_ageField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string healthy_volunteersField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlTextAttribute()]
-    public string Value {
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public textblock_struct study_pop {
         get {
-            return this.valueField;
+            return this.study_popField;
         }
         set {
-            this.valueField = value;
+            this.study_popField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public sampling_method_enum sampling_method {
+        get {
+            return this.sampling_methodField;
+        }
+        set {
+            this.sampling_methodField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool sampling_methodSpecified {
+        get {
+            return this.sampling_methodFieldSpecified;
+        }
+        set {
+            this.sampling_methodFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public textblock_struct criteria {
+        get {
+            return this.criteriaField;
+        }
+        set {
+            this.criteriaField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string gender {
+        get {
+            return this.genderField;
+        }
+        set {
+            this.genderField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string minimum_age {
+        get {
+            return this.minimum_ageField;
+        }
+        set {
+            this.minimum_ageField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string maximum_age {
+        get {
+            return this.maximum_ageField;
+        }
+        set {
+            this.maximum_ageField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string healthy_volunteers {
+        get {
+            return this.healthy_volunteersField;
+        }
+        set {
+            this.healthy_volunteersField = value;
         }
     }
 }
@@ -1401,21 +3211,175 @@ public partial class clinical_studyLocation_countriesCountry {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyLink {
+public partial class textblock_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string textblockField;
     
-    private string urlField;
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string textblock {
+        get {
+            return this.textblockField;
+        }
+        set {
+            this.textblockField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum sampling_method_enum {
     
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Probability Sample")]
+    ProbabilitySample,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Non-Probability Sample")]
+    NonProbabilitySample,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class intervention_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private intervention_type_enum intervention_typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string intervention_nameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descriptionField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] arm_group_labelField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] other_nameField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public intervention_type_enum intervention_type {
+        get {
+            return this.intervention_typeField;
+        }
+        set {
+            this.intervention_typeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string intervention_name {
+        get {
+            return this.intervention_nameField;
+        }
+        set {
+            this.intervention_nameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string description {
+        get {
+            return this.descriptionField;
+        }
+        set {
+            this.descriptionField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("arm_group_label", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] arm_group_label {
+        get {
+            return this.arm_group_labelField;
+        }
+        set {
+            this.arm_group_labelField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("other_name", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] other_name {
+        get {
+            return this.other_nameField;
+        }
+        set {
+            this.other_nameField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum intervention_type_enum {
+    
+    /// <remarks/>
+    Behavioral,
+    
+    /// <remarks/>
+    Biological,
+    
+    /// <remarks/>
+    Device,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Dietary Supplement")]
+    DietarySupplement,
+    
+    /// <remarks/>
+    Drug,
+    
+    /// <remarks/>
+    Genetic,
+    
+    /// <remarks/>
+    Procedure,
+    
+    /// <remarks/>
+    Radiation,
+    
+    /// <remarks/>
+    Other,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class arm_group_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string arm_group_labelField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string arm_group_typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string descriptionField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string url {
+    public string arm_group_label {
         get {
-            return this.urlField;
+            return this.arm_group_labelField;
         }
         set {
-            this.urlField = value;
+            this.arm_group_labelField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string arm_group_type {
+        get {
+            return this.arm_group_typeField;
+        }
+        set {
+            this.arm_group_typeField = value;
         }
     }
     
@@ -1436,19 +3400,116 @@ public partial class clinical_studyLink {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyResponsible_party {
+public partial class enrollment_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private actual_anticipated_enum typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool typeFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string valueField;
     
-    private string responsible_party_typeField;
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public actual_anticipated_enum type {
+        get {
+            return this.typeField;
+        }
+        set {
+            this.typeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool typeSpecified {
+        get {
+            return this.typeFieldSpecified;
+        }
+        set {
+            this.typeFieldSpecified = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlTextAttribute(DataType="integer")]
+    public string Value {
+        get {
+            return this.valueField;
+        }
+        set {
+            this.valueField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum actual_anticipated_enum {
+    
+    /// <remarks/>
+    Actual,
+    
+    /// <remarks/>
+    Anticipated,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class protocol_outcome_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string measureField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string time_frameField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string safety_issueField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string descriptionField;
     
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-    public string responsible_party_type {
+    public string measure {
         get {
-            return this.responsible_party_typeField;
+            return this.measureField;
         }
         set {
-            this.responsible_party_typeField = value;
+            this.measureField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string time_frame {
+        get {
+            return this.time_frameField;
+        }
+        set {
+            this.time_frameField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string safety_issue {
+        get {
+            return this.safety_issueField;
+        }
+        set {
+            this.safety_issueField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string description {
+        get {
+            return this.descriptionField;
+        }
+        set {
+            this.descriptionField = value;
         }
     }
 }
@@ -1458,10 +3519,35 @@ public partial class clinical_studyResponsible_party {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-public partial class clinical_studyCondition_browseMesh_term {
-    
+public partial class year_month_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private actual_anticipated_enum typeField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool typeFieldSpecified;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     private string valueField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public actual_anticipated_enum type {
+        get {
+            return this.typeField;
+        }
+        set {
+            this.typeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool typeSpecified {
+        get {
+            return this.typeFieldSpecified;
+        }
+        set {
+            this.typeFieldSpecified = value;
+        }
+    }
     
     /// <remarks/>
     [System.Xml.Serialization.XmlTextAttribute()]
@@ -1480,20 +3566,271 @@ public partial class clinical_studyCondition_browseMesh_term {
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-[System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-public partial class NewDataSet {
-    
-    private clinical_study[] itemsField;
+public partial class oversight_info_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] authorityField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private yes_no_enum has_dmcField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private bool has_dmcFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("clinical_study")]
-    public clinical_study[] Items {
+    [System.Xml.Serialization.XmlElementAttribute("authority", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] authority {
         get {
-            return this.itemsField;
+            return this.authorityField;
         }
         set {
-            this.itemsField = value;
+            this.authorityField = value;
         }
     }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public yes_no_enum has_dmc {
+        get {
+            return this.has_dmcField;
+        }
+        set {
+            this.has_dmcField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool has_dmcSpecified {
+        get {
+            return this.has_dmcFieldSpecified;
+        }
+        set {
+            this.has_dmcFieldSpecified = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class sponsor_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string agencyField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private agency_class_enum agency_classField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string agency {
+        get {
+            return this.agencyField;
+        }
+        set {
+            this.agencyField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public agency_class_enum agency_class {
+        get {
+            return this.agency_classField;
+        }
+        set {
+            this.agency_classField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum agency_class_enum {
+    
+    /// <remarks/>
+    NIH,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("U.S. Fed")]
+    USFed,
+    
+    /// <remarks/>
+    Industry,
+    
+    /// <remarks/>
+    Other,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class sponsors_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private sponsor_struct lead_sponsorField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private sponsor_struct[] collaboratorField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public sponsor_struct lead_sponsor {
+        get {
+            return this.lead_sponsorField;
+        }
+        set {
+            this.lead_sponsorField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("collaborator", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public sponsor_struct[] collaborator {
+        get {
+            return this.collaboratorField;
+        }
+        set {
+            this.collaboratorField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+public partial class id_info_struct {
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string org_study_idField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] secondary_idField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string nct_idField;
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private string[] nct_aliasField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string org_study_id {
+        get {
+            return this.org_study_idField;
+        }
+        set {
+            this.org_study_idField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("secondary_id", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] secondary_id {
+        get {
+            return this.secondary_idField;
+        }
+        set {
+            this.secondary_idField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string nct_id {
+        get {
+            return this.nct_idField;
+        }
+        set {
+            this.nct_idField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("nct_alias", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+    public string[] nct_alias {
+        get {
+            return this.nct_aliasField;
+        }
+        set {
+            this.nct_aliasField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum phase_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("N/A")]
+    NA,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 0")]
+    Phase0,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 1")]
+    Phase1,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 1/Phase 2")]
+    Phase1Phase2,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 2")]
+    Phase2,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 2/Phase 3")]
+    Phase2Phase3,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 3")]
+    Phase3,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Phase 4")]
+    Phase4,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum study_type_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Expanded Access")]
+    ExpandedAccess,
+    
+    /// <remarks/>
+    Interventional,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("N/A")]
+    NA,
+    
+    /// <remarks/>
+    Observational,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Observational [Patient Registry]")]
+    ObservationalPatientRegistry,
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+public enum biospec_retention_enum {
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("None Retained")]
+    NoneRetained,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Samples With DNA")]
+    SamplesWithDNA,
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlEnumAttribute("Samples Without DNA")]
+    SamplesWithoutDNA,
 }
